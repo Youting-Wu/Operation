@@ -6,9 +6,14 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <font face="標楷體">
 <body>
-<audio autoplay loop muted>>
+
+
+<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+
+<audio preload autoplay loop muted controls>
 	<source src="music.mp3"type="audio/mpeg">
 </audio>
+
 <a id="first">個人履歷</a>
 <ul>
 <li>姓名</li>
@@ -19,5 +24,26 @@
 <ul>
 <li><img src="pig.jpg" width="200" height="200"></li>
 </ul>
+
+
+<!--
+<script type="text/javascript">
+    window.onload = function(){
+             setInterval("toggleSound()",100);
+        }
+
+    function toggleSound() {
+                var music = document.getElementById("vd");
+                    
+                if (music.paused) { //判讀是否播放  
+                    music.paused=false;
+                    music.play(); //沒有就播放 
+                }    
+        }
+</script>
+-->
+
+
+
 </body>
 </html>
