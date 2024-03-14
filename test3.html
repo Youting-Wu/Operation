@@ -8,11 +8,16 @@
 <body>
 
 
-<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-
-<audio preload autoplay loop muted controls>
-	<source src="music.mp3"type="audio/mpeg">
+<audio id="music" preload autoplay loop muted>
+    <source src="music1.mp3" type="audio/mp3">
 </audio>
+
+<script>
+    document.addEventListener('click', function() {
+    document.getElementById('music1').muted=false;
+    document.getElementById('music1').play();
+})
+</script>
 
 <a id="first">個人履歷</a>
 <ul>
