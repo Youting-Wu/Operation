@@ -1,19 +1,27 @@
 <style>
 #header {height:100vh;background-image:url("picture.jpg"); text-align:center;background-repeat:no-repeat;background-size:cover;opacity: 0.75;padding:1em;position: relative;border-radius: 25px;}
 
-#article column {top:100%;font-family:t1, serif;padding:1em;height:100vh;width: 100%}
 
-#article1 column {font-family:t1, serif;padding:1em;height:100vh}
+#article {top:100%;font-family:t1, serif;padding:1em;height:100vh;width: 100%}
+.column {float: left; width: 50%; height: 350px; text-align: center;}
 
-#information column {line-height: 50px;top:313%;height: 35%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
+#article1 {font-family:t1, serif;padding:1em;height:100vh}
+.column1 {float: left; width: 50%; height: 350px; text-align: center;}
 
-#article2 column {font-family:t1, serif;padding:1em;height:100vh}
+#information {line-height: 50px;top:313%;height: 35%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
+.columni {float: left; width: 50%; height: 350px; text-align: center;}
 
-#information1 column {line-height: 50px;top:465%;height: 35%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
+#article2 {font-family:t1, serif;padding:1em;height:100vh}
+.column2 {float: left; width: 50%; height: 350px; text-align: center;}
 
-#article3 column {font-family:t1, serif;padding:1em;height:100vh}
+#information1 {line-height: 50px;top:465%;height: 40%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
+.columni1 {float: left; width: 50%; height: 350px; text-align: center;}
 
-#information2 column {line-height: 50px;top:618%;height: 35%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
+#article3 {font-family:t1, serif;padding:1em;height:100vh}
+.column3 {float: left; width: 50%; height: 350px; text-align: center;}
+
+#information2 {line-height: 50px;top:618%;height: 35%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
+.columni2 {float: left; width: 50%; height: 350px; text-align: center;}
 
 @font-face {
   font-family: 't1';
@@ -28,6 +36,57 @@ a:link {color: #341C0D }
 a:visited {color: #8E3D15 }
 a:hover {color: darkgray; }
 
+#pic img {
+	position:absolute;
+	width: 22%;
+	height: 40%;
+	top: 100%;
+	right: 24%;
+	margin-top:57px;
+	margin-bottom:50%;
+	opacity: 0.7;
+	border-radius: 10px;
+
+}
+
+#pici img {
+	position:absolute;
+	width: 25%;
+	height: 43%;
+	top: 120%;
+	right: 75%;
+	margin-top:57px;
+	margin-bottom:50%;
+	opacity: 0.60;
+	border-radius: 10px;
+
+}
+
+#pici1 img {
+	position:absolute;
+	width: 22%;
+	height: 40%;
+	top: 152%;
+	right: 68%;
+	margin-top:57px;
+	margin-bottom:50%;
+	opacity: 0.9;
+	border-radius: 10px;
+
+}
+
+#pici2 img {
+	position:absolute;
+	width: 35%;
+	height: 35%;
+	top: 166%;
+	right: 0%;
+	margin-top:57px;
+	margin-bottom:50%;
+	opacity: 0.77;
+	border-radius: 10px;
+
+}
 
 #pic1 img {
 	float: left;
@@ -59,6 +118,28 @@ a:hover {color: darkgray; }
 	opacity: 0.75;
 	border-radius: 25px;
 }
+#index {
+	position:absolute;
+	top:115%;
+	font-size: 260%;
+	left: 82%;
+}
+
+#index1 {
+	position:absolute;
+	top:130%;
+	font-size: 260%;
+	left: 31%;
+}
+
+#index2 {
+	position:absolute;
+	top:167%;
+	font-size: 260%;
+	left: 35%;
+}
+
+
 #fb img{
 	border-radius: 15px;
 }
@@ -142,11 +223,15 @@ a:hover {color: darkgray; }
     </div>
 </div>
 <div id="article">
+	<div id="pic"><img src="目錄.jpg" width="40%" height="770"></div>
+	<div id="pici"><img src="目錄1.jpg" width="40%" height="770"></div>
+	<div id="pici1"><img src="目錄2.jpg" width="40%" height="770"></div>
+	<div id="pici2"><img src="目錄3.jpg" width="40%" height="770"></div>
 	<nav><span>
 		<ul>
-			<ol><a href="#article1">木子咖啡</a></ol>
-			<ol><a href="#article2">驢子實驗室</a></ol>
-			<ol><a href="#article3">MY DAILY BEVERAGE.CO</a></ol>
+			<ol><div id="index">1.&nbsp<a href="#article1">木子咖啡</a></div></ol>
+			<ol><div id="index1">2.&nbsp<a href="#article2">驢子實驗室</a></div></ol>
+			<ol><div id="index2">3.&nbsp<a href="#article3">MY DAILY BEVERAGE.CO</a></div></ol>
 		</ul>
 	</span>	
 	</nav>
