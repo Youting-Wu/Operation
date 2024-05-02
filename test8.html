@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="position:absolute; background-color:#D94A38;width:90px;height:20px;padding:40px;top:0px; left:0px;">Hit</div>
+<script>
+
+const bodyObj = document.querySelector("body");
+const divObject = document.querySelector("div");
+let number = 0;
+
+x.addEventListener("click", function(){
+    number=number+1;
+    document.getElementById("counter").innerHTML = number;
+    if (number==1){
+        document.getElementById("counter").style.fontSize="36px";
+    }
+    else if (number==2){
+    document.getElementById("counter").style.fontSize="72px";
+    }
+    else{
+        document.getElementById("counter").style.color="red";
+    }
+});
+
+
+bodyObj.addEventListener("keypress", (event) => {
+
+    if (event.keyCode==97){
+       var topValue = divObject.style.left.replace("px", "");
+       divObject.style.left = (Number(topValue) - 20) + "px";
+    }
+    else if (event.keyCode==119){
+       var topValue = divObject.style.top.replace("px", "");
+       divObject.style.top = (Number(topValue) - 20) + "px";
+    }
+    else if (event.keyCode==100){
+       var topValue = divObject.style.left.replace("px", "");
+       divObject.style.left = (Number(topValue) + 20) + "px";
+    }
+    else if (event.keyCode==115){
+       var topValue = divObject.style.top.replace("px", "");
+       divObject.style.top = (Number(topValue) + 20) + "px";
+    }
+
+});
+
+</script>
+</body>
+</html>

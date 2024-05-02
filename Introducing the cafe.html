@@ -38,20 +38,20 @@ a:hover {color: darkgray; }
 
 #pic img {
 	position:absolute;
-	width: 22%;
-	height: 40%;
+	width: 20%;
+	height: 37%;
 	top: 100%;
 	right: 24%;
 	margin-top:57px;
 	margin-bottom:50%;
-	opacity: 0.7;
+	opacity: 0.67;
 	border-radius: 10px;
 
 }
 
 #pici img {
 	position:absolute;
-	width: 25%;
+	width: 24%;
 	height: 43%;
 	top: 120%;
 	right: 75%;
@@ -66,8 +66,8 @@ a:hover {color: darkgray; }
 	position:absolute;
 	width: 22%;
 	height: 40%;
-	top: 152%;
-	right: 68%;
+	top: 148%;
+	right: 66%;
 	margin-top:57px;
 	margin-bottom:50%;
 	opacity: 0.9;
@@ -77,13 +77,13 @@ a:hover {color: darkgray; }
 
 #pici2 img {
 	position:absolute;
-	width: 35%;
-	height: 35%;
-	top: 166%;
+	width: 32%;
+	height: 32%;
+	top: 168%;
 	right: 0%;
 	margin-top:57px;
 	margin-bottom:50%;
-	opacity: 0.77;
+	opacity: 0.73;
 	border-radius: 10px;
 
 }
@@ -120,23 +120,31 @@ a:hover {color: darkgray; }
 }
 #index {
 	position:absolute;
-	top:115%;
-	font-size: 260%;
+	top:113%;
+	font-size: 250%;
 	left: 82%;
 }
 
 #index1 {
 	position:absolute;
-	top:130%;
-	font-size: 260%;
+	top:127%;
+	font-size: 250%;
 	left: 31%;
 }
 
 #index2 {
 	position:absolute;
-	top:167%;
-	font-size: 260%;
-	left: 35%;
+	top:162%;
+	font-size: 250%;
+	left: 38%;
+}
+
+#index3 {
+	position:absolute;
+	top:110%;
+	font-size: 500%;
+	left: 5%;
+	color: #4D0000;
 }
 
 
@@ -223,21 +231,18 @@ a:hover {color: darkgray; }
     </div>
 </div>
 <div id="article">
-	<div id="pic"><img src="目錄.jpg" width="40%" height="770"></div>
-	<div id="pici"><img src="目錄1.jpg" width="40%" height="770"></div>
-	<div id="pici1"><img src="目錄2.jpg" width="40%" height="770"></div>
-	<div id="pici2"><img src="目錄3.jpg" width="40%" height="770"></div>
-	<nav><span>
-		<ul>
-			<ol><div id="index">1.&nbsp<a href="#article1">木子咖啡</a></div></ol>
-			<ol><div id="index1">2.&nbsp<a href="#article2">驢子實驗室</a></div></ol>
-			<ol><div id="index2">3.&nbsp<a href="#article3">MY DAILY BEVERAGE.CO</a></div></ol>
-		</ul>
-	</span>	
-	</nav>
+	<div id="pic"><img src="目錄.jpg"></div>
+	<div id="pici"><img src="目錄1.jpg"></div>
+	<div id="pici1"><img src="目錄2.jpg"></div>
+	<div id="pici2"><img src="目錄3.jpg"></div>
+		
+			<div id="index">1.&nbsp<a href="#article1">木子咖啡</a></div>
+			<div id="index1">2.&nbsp<a href="#article2">驢子實驗室</a></div>
+			<div id="index2">3.&nbsp<a href="#article3">MY DAILY BEVERAGE.CO</a></div>
+			<div id="index3">目錄</div>
 </div>
 <div id="article1">
-  <div id="pic1"><img src="picture1.jpg" width="40%" height="770"></div>
+  <div id="pic1"><img id="picture1" src="picture1.jpg" width="40%" height="770"></div>
 			<span id="mzcoffee"><span id="mz">木子咖啡</span><br><br>
 			&nbsp&nbsp&nbsp&nbsp偌大的鳳山自由路上一間質感自家烘焙咖啡館-木子咖啡，在此對外營業了！一走進店裡，馬上就被正在烘豆的烘豆機香氣給吸引，從義式咖啡再到手沖咖啡，選擇非常多樣，但我還是選擇最習慣的冰美式搭配一塊千層蛋糕，圓滿我的午茶時間。即使店面設計的很網美感，但咖啡甜點毫不遜色，這點很是驚喜呢。
 			</span>	
@@ -280,5 +285,16 @@ a:hover {color: darkgray; }
     <ol>營業時間：10:30-18:30</ol>
     <ol><span id="fb"><img src="fb.png" width="40px" height="40px"></span><a href="https://www.facebook.com/MDBVCO/?locale=zh_TW" target="_blank">Facebook </a> &nbsp <span id="fb"><img src="ig.jpg" width="40px" height="40px"></span><a href="https://www.instagram.com/mdbvco/" target="_blank">Instagram</ol>
   </ul>
+
+  <script>
+
+  const obj = document.querySelector("#picture1");
+  obj.addEventListener('mouseover', function(){
+      obj.src="picture2.jpg";
+  });
+  obj.addEventListener('mouseout', function(){
+      obj.src="picture1.jpg";
+  });
+  </script>
 </div> 
 </body>
