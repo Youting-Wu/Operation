@@ -1,45 +1,99 @@
 <style>
-#header {height:100vh;background-image:url("picture.jpg"); text-align:center;background-repeat:no-repeat;background-size:cover;opacity: 0.75;padding:1em;position: relative;border-radius: 25px;}
+#header {height: 100vh;opacity: 0.75;text-align:center;background-repeat:no-repeat;background-image: cover;padding:1em;border-radius: 25px;}
 
 
-#article {top:100%;font-family:t1, serif;padding:1em;height:100vh;width: 100%}
-.column {float: left; width: 50%; height: 350px; text-align: center;}
+#article {top:100%;font-family:t1, serif;padding:1em;text-align:center;height:100vh;width: 100%}
 
 #article1 {font-family:t1, serif;padding:1em;height:100vh}
-.column1 {float: left; width: 50%; height: 350px; text-align: center;}
 
-#information {line-height: 50px;top:313%;height: 35%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
-.columni {float: left; width: 50%; height: 350px; text-align: center;}
+#information {line-height: 50px;top:322%;height: 38%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
 
 #article2 {font-family:t1, serif;padding:1em;height:100vh}
-.column2 {float: left; width: 50%; height: 350px; text-align: center;}
 
-#information1 {line-height: 50px;top:465%;height: 40%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
-.columni1 {float: left; width: 50%; height: 350px; text-align: center;}
+
+#information1 {line-height: 50px;top:468%;height: 40%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
 
 #article3 {font-family:t1, serif;padding:1em;height:100vh}
-.column3 {float: left; width: 50%; height: 350px; text-align: center;}
 
-#information2 {line-height: 50px;top:618%;height: 35%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
-.columni2 {float: left; width: 50%; height: 350px; text-align: center;}
+
+#information2 {line-height: 50px;top:618%;height: 40%;font-family:t1, serif;font-size: 200%;border: 3px solid #ddd;border-radius: 25px;width: 95%;padding: 20px;}
+
 
 @font-face {
   font-family: 't1';
   src: url('ChenYuluoyan-Thin.ttf');
 }
 
-@media screen and (max-width: 768px){
-.column{width: 100%;}
-}
 
 a:link {color: #341C0D }
-a:visited {color: #8E3D15 }
-a:hover {color: darkgray; }
+a:visited {color: #2C120D; }
+a:hover {color: #765752; }
+
+.coverflow>a{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+		-webkit-animation: silder 24s linear infinite;
+ 		animation: silder 24s linear infinite;
+}
+.coverflow>a>img{
+    width: 117%;
+    height:100vh;; 
+    text-align:center;
+    background-repeat:no-repeat;
+    border-radius: 25px;
+}
+
+@-webkit-keyframes silder {
+    3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    27% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+@keyframes silder {
+    3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    27% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+
+.coverflow>a:nth-child(3) {
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;               
+}
+.coverflow>a:nth-child(2) {
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
+}
+.coverflow>a:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;    
+}
 
 #pic img {
 	position:absolute;
-	width: 20%;
-	height: 37%;
+	width: 17%;
+	height: 38%;
 	top: 100%;
 	right: 24%;
 	margin-top:57px;
@@ -78,8 +132,8 @@ a:hover {color: darkgray; }
 #pici2 img {
 	position:absolute;
 	width: 32%;
-	height: 32%;
-	top: 168%;
+	height: 35%;
+	top: 165%;
 	right: 0%;
 	margin-top:57px;
 	margin-bottom:50%;
@@ -91,6 +145,7 @@ a:hover {color: darkgray; }
 #pic1 img {
 	float: left;
 	top: 200%;
+	height: 95%;
 	margin-top:35px;
 	margin-bottom:35px;
 	opacity: 0.75;
@@ -120,23 +175,23 @@ a:hover {color: darkgray; }
 }
 #index {
 	position:absolute;
-	top:113%;
+	top:131%;
 	font-size: 250%;
 	left: 82%;
 }
 
 #index1 {
 	position:absolute;
-	top:127%;
+	top:122%;
 	font-size: 250%;
-	left: 31%;
+	left: 36%;
 }
 
 #index2 {
 	position:absolute;
-	top:162%;
+	top:165%;
 	font-size: 250%;
-	left: 38%;
+	left: 39%;
 }
 
 #index3 {
@@ -147,6 +202,38 @@ a:hover {color: darkgray; }
 	color: #4D0000;
 }
 
+#index-bottom{
+	top:304% ;
+  right: 10%;
+  font-family:t1, serif;
+	font-size: 300%;
+	color:#341C0D;
+	border: 3px solid #ddd;
+	padding:8px;
+	position: absolute;
+}
+
+#index-bottom1{
+	top:450% ;
+  left: 10%;
+  font-family:t1, serif;
+	font-size: 300%;
+	color:#341C0D;
+	border: 3px solid #ddd;
+	padding:8px;
+	position: absolute;
+}
+
+#index-bottom2{
+	top:605% ;
+  right: 10%;
+  font-family:t1, serif;
+	font-size: 300%;
+	color:#341C0D;
+	border: 3px solid #ddd;
+	padding:8px;
+	position: absolute;
+}
 
 #fb img{
 	border-radius: 15px;
@@ -170,7 +257,7 @@ a:hover {color: darkgray; }
 
 #inner{
 	position:absolute;
-	top:47%;
+	top:50%;
 	left:50%;
 	transform: translate(-50%, -50%);
 }
@@ -223,30 +310,37 @@ a:hover {color: darkgray; }
 </style>
 <body>
 <div id="header">
+	<div class="coverflow">
+    <a href='#'><img src='picture.jpg' alt=' ' ></a>
+    <a href='#'><img src='封面.jpg' alt=' ' ></a>
+    <a href='#'><img src='封面1.jpg' alt=' ' ></a>
+	</div>
+</div>
 	<div id="inner">
         <span id="test">高雄鳳山區不限時咖啡廳</span><br><br><br>
 	    <nav><span id="test1">
 	    	<a href="#article">Read more</a>
         </span></nav>
-    </div>
-</div>
+  </div>
 <div id="article">
 	<div id="pic"><img src="目錄.jpg"></div>
 	<div id="pici"><img src="目錄1.jpg"></div>
 	<div id="pici1"><img src="目錄2.jpg"></div>
 	<div id="pici2"><img src="目錄3.jpg"></div>
 		
-			<div id="index">1.&nbsp<a href="#article1">木子咖啡</a></div>
-			<div id="index1">2.&nbsp<a href="#article2">驢子實驗室</a></div>
-			<div id="index2">3.&nbsp<a href="#article3">MY DAILY BEVERAGE.CO</a></div>
+			<div id="index">2.&nbsp<a href="#article2">驢子實驗室</a><br><br>溫馨、純樸</div>
+			<div id="index1">1.&nbsp<a href="#article1">木子咖啡</a><br><br>恬靜、淡雅</div>
+			<div id="index2">3.&nbsp<a href="#article3">MY DAILY BEVERAGE.CO</a><br><br>現代、自在</div>
 			<div id="index3">目錄</div>
+			
 </div>
 <div id="article1">
-  <div id="pic1"><img id="picture1" src="picture1.jpg" width="40%" height="770"></div>
+  <div id="pic1"><img id="picture1" src="picture1.jpg" width="40%" ></div>
 			<span id="mzcoffee"><span id="mz">木子咖啡</span><br><br>
 			&nbsp&nbsp&nbsp&nbsp偌大的鳳山自由路上一間質感自家烘焙咖啡館-木子咖啡，在此對外營業了！一走進店裡，馬上就被正在烘豆的烘豆機香氣給吸引，從義式咖啡再到手沖咖啡，選擇非常多樣，但我還是選擇最習慣的冰美式搭配一塊千層蛋糕，圓滿我的午茶時間。即使店面設計的很網美感，但咖啡甜點毫不遜色，這點很是驚喜呢。
 			</span>	
 	</div> 
+	<div id="index-bottom"><a href="#article">回選單</a></div>
 <div id="information">
   <ul>
     <ol>木子咖啡</ol>
@@ -262,6 +356,7 @@ a:hover {color: darkgray; }
 			&nbsp&nbsp&nbsp&nbsp進駐在鳳山黃埔新村的驢子實驗室，依舊不變的是那美味的鹹派，先前我還沒去過元啡驢派，果真如大家所說的那樣，一下就被擄獲胃口。過去作為日式宿舍，現在充滿咖啡與烘焙香的地方，在暖陽灑落之際，那瞬間我感覺自己特別幸福。
 			</span>
 </div>
+<div id="index-bottom1"><a href="#article">回選單</a></div>
 <div id="information1">
   <ul>
     <ol>驢子實驗室</ol>
@@ -277,6 +372,7 @@ a:hover {color: darkgray; }
 			&nbsp&nbsp&nbsp&nbsp從餐車到開設店面的 My Daily Beverage.co 很喜歡他們對於空間上的巧思與設計，將香氛帶進咖啡館。想吃一份早午餐還是甜點呢？在這裡能一次吃飽，這一兩年很熱門的可朗芙再搭配一球香草冰淇淋，簡直是夏日必備的療癒甜品，除了咖啡，牛奶類的飲品也是它們的招牌！舒服的空間在這耗上午後時間吧。
 		</span>    
 </div>
+<div id="index-bottom2"><a href="#article">回選單</a></div>
 <div id="information2">
   <ul>
     <ol>MY DAILY BEVERAGE.CO</ol>
@@ -286,15 +382,15 @@ a:hover {color: darkgray; }
     <ol><span id="fb"><img src="fb.png" width="40px" height="40px"></span><a href="https://www.facebook.com/MDBVCO/?locale=zh_TW" target="_blank">Facebook </a> &nbsp <span id="fb"><img src="ig.jpg" width="40px" height="40px"></span><a href="https://www.instagram.com/mdbvco/" target="_blank">Instagram</ol>
   </ul>
 
-  <script>
+<audio id="music2" preload autoplay loop muted>
+    <source src="music2.mp3" type="audio/mp3">
+</audio>
 
-  const obj = document.querySelector("#picture1");
-  obj.addEventListener('mouseover', function(){
-      obj.src="picture2.jpg";
-  });
-  obj.addEventListener('mouseout', function(){
-      obj.src="picture1.jpg";
-  });
-  </script>
+<script>
+    document.addEventListener('click', function() {
+    document.getElementById('music2').muted=false;
+    document.getElementById('music2').play();
+})
+</script>
 </div> 
 </body>
